@@ -3,9 +3,11 @@ import PropTypes from "prop-types"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import styles from "../styles/components/externalLink.module.scss"
+
 const ExternalLink = ({url, icon}) => (
-  <div>
-    <a href={url}>
+  <div className={styles.container}>
+    <a className={styles.a} href={url}>
       <FontAwesomeIcon
         icon={icon}
         size='2x'
