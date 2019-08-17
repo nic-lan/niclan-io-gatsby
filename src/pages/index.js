@@ -25,8 +25,8 @@ const IndexPage = () => (
       {
         externalLinks.map((item, i) => {
           return(
-            <Col>
-              <ExternalLink key={i} icon={item.icon} url={item.url} />
+            <Col key={i}>
+              <ExternalLink icon={item.icon} url={item.url} />
             </Col>
           )
         })

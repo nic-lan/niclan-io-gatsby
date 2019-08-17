@@ -17,8 +17,8 @@ const ExternalLink = ({url, icon}) => (
 )
 
 ExternalLink.propTypes = {
-  icon: PropTypes.isRequired,
-  url: PropTypes.isRequired,
+  icon: PropTypes.object.isRequired,
+  url: PropTypes.string.isRequired,
 }
 
 export default ExternalLink
